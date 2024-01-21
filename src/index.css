@@ -1,13 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgb(226, 223, 223);
+}
+.height100 {
+  height: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 24px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background-color: rgb(240, 236, 236);
+}
+.blog-name {
+  padding-left: 32px;
+  font-weight: 800;
+  font-size: 24px;
+  color: gray;
+}
+.blog-element {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 0 32px;
+}
+.blog-element:hover {
+  background-color: rgb(240, 236, 236);
+}
+.blog-title {
+  font-weight: 800;
+  font-size: 18px;
+}
+.blog-author {
+  color: gray;
+}
+.loading {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: gray;
+  font-size: 24px;
+  animation: loading-animation 1s ease infinite;
+}
+@keyframes loading-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 12px;
+}
+.form-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 80px;
+}
+input,
+textarea {
+  outline: none;
+}
+button {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 8px;
+  font-family: "'Quicksand'";
+  font-weight: 700;
+  font-size: 14px;
+  color: #655f5f;
+  cursor: pointer;
+}
+button:hover {
+  background: gray;
+  color: #fff;
 }
